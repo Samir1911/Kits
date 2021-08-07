@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="logo.png">
+    <title>Kits/Forgot Password</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            background: rgb(189, 245, 245);
+        }
+
+        .Kits_logo {
+            text-align: center;
+            color: blue;
+            width: 100%;
+        }
+
+        h1 span {
+            color: red;
+        }
+
+        .Kits_logo div h1 {
+            letter-spacing: 5px;
+            font-size: 40px;
+        }
+
+        .Kits_logo p {
+            margin-top: -20px;
+        }
+
+        #clg {
+            word-spacing: 10px;
+        }
+
+        container {
+            display: grid;
+            width: 100%;
+            height: 100vh;
+            place-items: center;
+        }
+
+        main {
+            width: 350px;
+            height: 250px;
+            background: white;
+            box-shadow: 5px 5px 3px grey;
+            margin-top: -170px;
+            padding-top:50px;
+        }
+
+        .fip {
+            width: 300px;
+            height: 30px;
+            margin: 15px 20px;
+        }
+
+        .ip:first-child {
+            margin-top: 50px;
+        }
+
+        button {
+            width: 150px;
+            height: 40px;
+            border-width: 0px;
+            background-color: rgb(31, 110, 93);
+            color: white;
+            border-radius: 15px;
+            margin: 10px 112.5px;
+        }
+        a{
+            text-decoration:none;
+        }
+        a h1{
+          color:blue;
+        }
+    </style>
+</head>
+
+<body>
+    <container>
+        <header>
+            <div class="Kits_logo">
+                <div>
+                    <a href="index.html"><h1>K<span>IT</span>S</h1></a>
+                    <P>[Autonomous]</P>
+                </div>
+
+                <h1 id="clg">KKR AND KSR <span>INSTITUTE OF TECHNOLOGY</span> AND SCIENCES </h1>
+            </div>
+        </header>
+        <main>
+            <input class="fip" type="password" placeholder="Password">
+            <input class="fip" type="password" placeholder="Confirm Password">
+
+            <button><a href="#">Change Password</a></button>
+        </main>
+
+    </container>
+    <script>
+        const btn=document.querySelector("button a");
+        const fip=document.querySelectorAll(".fip");
+        btn.addEventListener("click",function(){
+            if (fip[0].value == fip[1].value && fip[0].value!=""){
+                fip.forEach(fp => {
+                    fp.addEventListener("input", function () {
+                        if (fp == fip[0])
+                            localStorage.setItem("password", fp.value);
+                        if (fp == fip[1])
+                            localStorage.setItem("confirm", fp.value);
+                    });
+                })
+                alert("Password Changed  Successfully");
+                btn.setAttribute("href","login.html");
+            }
+            else {
+                alert("password not Matched");
+                fip[0].value="";
+                fip[1].value="";
+            }
+            
+        });
+    </script>
+
+</body>
+
+</html>

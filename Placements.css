@@ -1,0 +1,215 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background: rgba(248, 248, 248, 0.9);
+}
+.Kits_logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: blue;
+  width: 100%;
+}
+h1 span {
+  color: red;
+}
+.Kits_logo div h1 {
+  letter-spacing: 5px;
+  font-size: 40px;
+}
+.Kits_logo p {
+  margin-top: -25px;
+}
+.Kits_logo div {
+  margin: 0 30px;
+}
+#clg {
+  word-spacing: 10px;
+  width: fit-content;
+}
+.navbar {
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: black;
+}
+.navbar span {
+  background-color: white;
+  width: 1px;
+  height: 30px;
+}
+.menu {
+  display: none;
+}
+.sidebar {
+  width: 300px;
+  height: fit-content;
+  display: none;
+  padding: 20px;
+  text-align: center;
+  background: white;
+}
+.sidebar::after {
+  content: "";
+  position: absolute;
+  margin-top: -300px;
+  margin-left: 140px;
+  border-bottom: 30px solid white;
+  border-left: 30px solid transparent;
+}
+
+.sidebar a {
+  display: block;
+  padding: 5px 0;
+  text-decoration: none;
+}
+@media (max-width: 730px) {
+  h1 {
+    font-size: 1.5em;
+  }
+}
+.nav_ele {
+  text-decoration: none;
+  color: white;
+  padding: 0 20px;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  box-sizing: border-box;
+}
+
+#Login_btn,
+#Sign_btn {
+  background: rgb(117, 6, 245);
+  height: 30px;
+  border-radius: 10px;
+  border-width: 0px;
+  font-size: 13px;
+  color: white;
+}
+.Top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 98vw;
+  border-width: 2px;
+  border-style: solid;
+  box-sizing: border-box;
+}
+.others {
+  display: flex;
+  flex-wrap: wrap;
+  width: 98vw;
+  height: fit-content;
+  justify-content: space-around;
+  border-width: 2px;
+  border-style: solid;
+}
+.gal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.gal img {
+  width: 500px;
+  height: 300px;
+  margin: 5px;
+}
+.logos {
+  width: 150px;
+  height: 100px;
+  margin: 3px;
+}
+.logo {
+  width: 150px;
+  height: 100px;
+  margin: 10px 30px;
+}
+.placement {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 300px auto;
+  margin-top: 30px;
+}
+@media (max-width: 810px) {
+  .gal img {
+    width: 400px;
+    height: 200px;
+  }
+}
+@media (max-width: 710px) {
+  .placement {
+    display: block;
+    text-align: center;
+  }
+  .Links {
+    margin: 5px auto;
+  }
+}
+.Links {
+  width: 270px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#link {
+  font-size: 20px;
+  margin: 5px;
+  text-decoration: none;
+}
+#link:hover {
+  background: linear-gradient(to right, rgb(0, 255, 0), rgba(0, 255, 0, 0));
+  height: 25px;
+}
+.Social {
+  width: 2em;
+  height: 2em;
+  padding: 0 10px;
+}
+.navi {
+  display: flex;
+  width: 100%;
+  color: White;
+  background: black;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+@media (max-width: 700px) {
+  .navbar {
+    display: none;
+  }
+  #menu {
+    margin-left: 300px;
+  }
+  .menu {
+    display: block;
+    margin: 30px 20px 0 auto;
+    width: 340px;
+  }
+  .sidebar {
+    margin-top: 28px;
+  }
+}
+@media (max-width: 450px) {
+  .Kits_logo {
+    display: block;
+  }
+  .clg {
+    margin-right: 0;
+  }
+  .gal img {
+    width: 340px;
+  }
+  .logo {
+    width: 100px;
+  }
+}
+@media (max-width: 830px) {
+  .nav_ele {
+    padding: 0 10px;
+  }
+}

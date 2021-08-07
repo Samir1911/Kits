@@ -1,0 +1,156 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background: rgba(248, 248, 248, 0.9);
+}
+.Kits_logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: blue;
+  width: 100%;
+}
+h1 span {
+  color: red;
+}
+.Kits_logo div h1 {
+  letter-spacing: 5px;
+  font-size: 40px;
+}
+.Kits_logo p {
+  margin-top: -25px;
+}
+.Kits_logo div {
+  margin: 0 30px;
+}
+#clg {
+  word-spacing: 10px;
+  width: fit-content;
+}
+.navbar {
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: black;
+}
+.navbar span {
+  background-color: white;
+  width: 1px;
+  height: 30px;
+}
+.menu {
+  display: none;
+}
+.sidebar {
+  width: 300px;
+  height: fit-content;
+  display: none;
+  padding: 20px;
+  text-align: center;
+  background: white;
+}
+.sidebar::after {
+  content: "";
+  position: absolute;
+  margin-top: -300px;
+  margin-left: 140px;
+  border-bottom: 30px solid white;
+  border-left: 30px solid transparent;
+}
+
+.sidebar a {
+  display: block;
+  padding: 5px 0;
+  text-decoration: none;
+}
+@media (max-width: 730px) {
+  h1 {
+    font-size: 1.5em;
+  }
+}
+.nav_ele {
+  text-decoration: none;
+  color: white;
+  padding: 0 20px;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  box-sizing: border-box;
+}
+
+#Login_btn,
+#Sign_btn {
+  background: rgb(117, 6, 245);
+  height: 30px;
+  border-radius: 10px;
+  border-width: 0px;
+  font-size: 13px;
+  color: white;
+}
+.Content {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.thumb {
+  width: 400px;
+  height: 250px;
+  border-radius: 10px;
+}
+.thumb:hover {
+  border-width: 5px;
+  border-style: solid;
+  box-sizing: border-box;
+}
+.Social {
+  width: 2em;
+  height: 2em;
+  padding: 0 10px;
+}
+.navi {
+  display: flex;
+  width: 100%;
+  color: White;
+  background: black;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 400px) {
+  .thumb {
+    width: 150px;
+    height: 100px;
+  }
+}
+@media (max-width: 700px) {
+  .navbar {
+    display: none;
+  }
+  #menu {
+    margin-left: 300px;
+  }
+  .menu {
+    display: block;
+    margin: 30px 20px 0 auto;
+    width: 340px;
+  }
+  .sidebar {
+    margin-top: 28px;
+  }
+}
+@media (max-width: 450px) {
+  .Kits_logo {
+    display: block;
+  }
+  .clg {
+    margin-right: 0;
+  }
+}
+@media (max-width: 830px) {
+  .nav_ele {
+    padding: 0 10px;
+  }
+}

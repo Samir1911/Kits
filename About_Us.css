@@ -1,0 +1,279 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background: linear-gradient(
+    to bottom right,
+    rgb(137, 25, 212),
+    rgb(58, 58, 226)
+  );
+}
+.Kits_logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: blue;
+  width: 100%;
+}
+h1 span {
+  color: red;
+}
+.Kits_logo div h1 {
+  letter-spacing: 5px;
+  font-size: 40px;
+}
+.Kits_logo p {
+  margin-top: -25px;
+}
+.Kits_logo div {
+  margin: 0 30px;
+}
+#clg {
+  word-spacing: 10px;
+  width: fit-content;
+}
+.navbar {
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: black;
+}
+.navbar span {
+  background-color: white;
+  width: 1px;
+  height: 30px;
+}
+.menu {
+  display: none;
+}
+.sidebar {
+  width: 300px;
+  height: fit-content;
+  display: none;
+  padding: 20px;
+  text-align: center;
+  background: white;
+}
+.sidebar::after {
+  content: "";
+  position: absolute;
+  margin-top: -300px;
+  margin-left: 140px;
+  border-bottom: 30px solid white;
+  border-left: 30px solid transparent;
+}
+
+.sidebar a {
+  display: block;
+  padding: 5px 0;
+  text-decoration: none;
+}
+@media (max-width: 730px) {
+  h1 {
+    font-size: 1.5em;
+  }
+}
+.nav_ele {
+  text-decoration: none;
+  color: white;
+  padding: 0 20px;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  box-sizing: border-box;
+}
+
+#Login_btn,
+#Sign_btn {
+  background: rgb(117, 6, 245);
+  height: 30px;
+  border-radius: 10px;
+  border-width: 0px;
+  font-size: 13px;
+  color: white;
+}
+
+.Social {
+  width: 2em;
+  height: 2em;
+  padding: 0 10px;
+}
+.navi {
+  display: flex;
+  width: 100%;
+  color: White;
+  background: black;
+  justify-content: center;
+  align-items: center;
+}
+.main {
+  display: grid;
+  place-items: center;
+}
+.container {
+  width: 950px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#Timeline {
+  text-align: center;
+}
+.content {
+  width: 400px;
+}
+.content_1,
+.content_2 {
+  background: rgb(252, 241, 241);
+  padding: 30px;
+  box-sizing: border-box;
+  height: 240px;
+}
+.contain {
+  display: none;
+}
+.content_1 {
+  margin-bottom: 240px;
+  box-shadow: 5px 5px 5px rgb(14, 12, 12);
+}
+.content_2 {
+  margin-top: 240px;
+  box-shadow: -5px 5px 5px rgb(15, 15, 15);
+}
+.year::before {
+  content: "";
+  width: 5px;
+  height: 160px;
+  background: blue;
+  margin-top: -180px;
+}
+.Year {
+  height: 1920px;
+  display: grid;
+  align-items: space-around;
+  padding-top: 100px;
+  overflow: hidden;
+}
+.year {
+  background: black;
+  color: white;
+  width: 80px;
+  height: 80px;
+  display: grid;
+  place-items: center;
+  margin: 10px;
+  border-radius: 50px;
+  box-sizing: border-box;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 950px) {
+  .content {
+    width: 300px;
+  }
+  .container {
+    width: 100%;
+  }
+}
+@media (max-width: 830px) {
+  .nav_ele {
+    padding: 0 10px;
+  }
+}
+@media (max-width: 710px) {
+  .Year {
+    position: absolute;
+    margin-left: -300px;
+    height: 1990px;
+  }
+  .container {
+    box-sizing: border-box;
+    margin-left: 100px;
+  }
+  .content_1 {
+    margin-left: 50px;
+    margin-bottom: 270px;
+    margin-top: 30px;
+    width: 450px;
+  }
+  .content_2 {
+    margin-left: -250px;
+    margin-top: 270px;
+    width: 450px;
+  }
+  .year::before {
+    height: 168px;
+    margin-top: -189px;
+  }
+
+  main {
+    display: block;
+    overflow: hidden;
+  }
+
+  .navbar {
+    display: none;
+  }
+  #menu {
+    margin-left: 300px;
+  }
+  .menu {
+    display: block;
+    margin: 30px 20px 0 auto;
+    width: 340px;
+  }
+  .sidebar {
+    margin-top: 28px;
+  }
+  #Timeline {
+    text-align: left;
+    padding-left: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    display: none;
+  }
+  .contain {
+    display: grid;
+    width: 100%;
+    place-items: center;
+  }
+  .element {
+    width: 400px;
+    height: fit-content;
+    background: rgb(247, 233, 233, 0.9);
+    margin: 10px 0;
+    padding: 15px;
+    box-shadow: 0 0 15px rgba(243, 234, 234, 0.5);
+  }
+
+  .Y {
+    width: 70px;
+    height: 70px;
+    background: black;
+    color: white;
+    border-radius: 70px;
+    display: grid;
+    place-items: center;
+    box-sizing: border-box;
+  }
+  #Timeline {
+    text-align: center;
+    padding-left: 0;
+  }
+}
+@media (max-width: 450px) {
+  .Kits_logo {
+    display: block;
+  }
+  .clg {
+    margin-right: 0;
+  }
+  .element {
+    width: 300px;
+  }
+}

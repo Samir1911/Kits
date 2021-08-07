@@ -1,0 +1,314 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background: rgba(248, 248, 248, 0.9);
+}
+.Kits_logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: blue;
+  width: 100%;
+}
+h1 span {
+  color: red;
+}
+.Kits_logo div h1 {
+  letter-spacing: 5px;
+  font-size: 40px;
+}
+.Kits_logo p {
+  margin-top: -25px;
+}
+.Kits_logo div {
+  margin: 0 30px;
+}
+#clg {
+  word-spacing: 10px;
+  width: fit-content;
+}
+.navbar {
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: black;
+}
+.navbar span {
+  background-color: white;
+  width: 1px;
+  height: 30px;
+}
+.menu {
+  display: none;
+}
+.sidebar {
+  width: 300px;
+  height: fit-content;
+  display: none;
+  padding: 20px;
+  text-align: center;
+  background: white;
+}
+.sidebar::after {
+  content: "";
+  position: absolute;
+  margin-top: -250px;
+  margin-left: 140px;
+  border-bottom: 30px solid white;
+  border-left: 30px solid transparent;
+}
+.sidebar a {
+  display: block;
+  padding: 5px 0;
+  text-decoration: none;
+}
+@media (max-width: 730px) {
+  h1 {
+    font-size: 1.5em;
+  }
+}
+.nav_ele {
+  text-decoration: none;
+  color: white;
+  padding: 0 20px;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  box-sizing: border-box;
+}
+a button {
+  width: 100%;
+  height: 100%;
+}
+.Social {
+  width: 2em;
+  height: 2em;
+  padding: 0 10px;
+}
+.navi {
+  display: flex;
+  width: 100%;
+  color: White;
+  background: black;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 700px) {
+  .navbar {
+    display: none;
+  }
+  #menu {
+    margin-left: 300px;
+  }
+  .menu {
+    display: block;
+    margin: 30px 20px 0 auto;
+    width: 340px;
+  }
+  .sidebar {
+    margin-top: 28px;
+  }
+}
+@media (max-width: 450px) {
+  .Kits_logo {
+    display: block;
+  }
+  .clg {
+    margin-right: 0;
+  }
+}
+container {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+main {
+  width: 700px;
+  margin: 20px;
+  box-sizing: border-box;
+  height: 560px;
+  background: linear-gradient(
+    to bottom right,
+    rgba(7, 7, 247, 0.8),
+    rgb(123, 0, 255)
+  );
+  box-shadow: 10px 10px 10px grey;
+}
+.slidebar {
+  position: absolute;
+  width: 560px;
+  height: 50px;
+  background-color: rgb(30, 184, 255);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transform: rotate(270deg);
+  margin: 255px 0 0 -255px;
+}
+.slidebar button {
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  border-width: 0px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.slidebar button:last-child {
+  background-color: red;
+}
+b {
+  color: rgb(60, 206, 174);
+}
+
+.content {
+  width: 100%;
+  padding: 20px 10px 20px 70px;
+  box-sizing: border-box;
+  font-size: 17px;
+}
+.content p {
+  color: rgb(240, 238, 238);
+}
+#Residence {
+  width: 90%;
+}
+#Personal {
+  display: grid;
+  grid-template-columns: auto 150px;
+}
+#Personal img {
+  width: 130px;
+  height: 130px;
+  border-radius: 10px;
+}
+@media (max-width: 720px) {
+  main {
+    width: 90%;
+  }
+  .Pers {
+    grid-area: "Pers";
+  }
+  #stud {
+    grid-area: "stud";
+  }
+}
+@media (max-width: 560px) {
+  #Personal {
+    grid-template-rows: 75px auto;
+    grid-template-areas: "p p" "c c";
+    place-items: center;
+  }
+  #Personal img {
+    grid-area: p;
+    border-radius: 50px;
+    height: 75px;
+    width: 75px;
+  }
+  .Pers {
+    grid-area: c;
+    font-size: 15px;
+  }
+  main {
+    margin: 20px 10px;
+  }
+}
+#SemWise {
+  width: 60%;
+}
+.sem,
+.lang {
+  width: 250px;
+  height: 4px;
+  background: grey;
+  border-radius: 3px;
+}
+.percent {
+  height: 4px;
+  background: rgb(8, 240, 8);
+  border-radius: 4px;
+}
+.Sem,
+.ski {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 360px;
+}
+@media (max-width: 545px) {
+  .slidebar {
+    height: 30px;
+    margin: 265px 0 0 -265px;
+  }
+  .content {
+    margin-left: -20px;
+  }
+  .Sem,
+  .ski {
+    width: 270px;
+  }
+  .sem,
+  .lang {
+    width: 150px;
+  }
+}
+@media (max-width: 430px) {
+  .Sem p {
+    font-size: 13px;
+  }
+  .Sem,
+  .ski {
+    width: 240px;
+  }
+  .main {
+    width: 100%;
+    margin: 20px 0;
+  }
+  .lang {
+    margin: 0 5px;
+  }
+}
+@media (max-width: 400px) {
+  main {
+    width: 100%;
+  }
+}
+li {
+  list-style-type: none;
+}
+legend {
+  color: white;
+}
+.skill {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: space-around;
+}
+.skill fieldset {
+  margin: 10px 0;
+  width: 80%;
+}
+.P {
+  display: flex;
+  align-items: center;
+  width: 100px;
+}
+.P div {
+  margin-left: 10px;
+}
+.P div img {
+  margin-left: 5px;
+}
+.text {
+  width: 60px;
+}
+.ski {
+  height: 30px;
+}
+.span {
+  height: 4px;
+  background: rgb(8, 240, 8);
+  border-radius: 4px;
+}
